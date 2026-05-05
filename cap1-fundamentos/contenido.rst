@@ -14,6 +14,12 @@ Los procesos de cifrar y descifrar se representan por:
 * E(K,M)=C, donde E= *encrypt*, K= *key* y M= *message.*
 * D(K,C)=M, donde D= *decrypt* y C= *ciphertext.*
 
+.. figure:: cifrado.png
+   :alt: Cifrado y descifrado
+   :align: center
+
+   Cifrado y descifrado
+
 Cifrados clásicos
 ---------------------
 
@@ -47,5 +53,17 @@ Podemos asumir que un cifrado se basa en dos elementos:
 
 La permutación
 ~~~~~~~~~~~~~~~~~~~~~~~
-Los cifrados clásicos reemplazan una letra por otra, es decir hacen una *sustitución*
+Los cifrados clásicos reemplazan una letra por otra, es decir hacen una *sustitución.* Sin embargo no vale cualquier sustitución. Si en un cifrado tipo César reemplazásemos **Z** por **C** y la **X** también por **C** entonces sería imposible hacer el descifrado. Lo que se hace es en realidad **una permutación.** Para que haya seguridad, la permutación debe cumplir algunos criterios:
+
+1. La permutación debería depender de la clave.
+2. Diferentes claves deberían dar lugar a diferentes permutaciones.
+3. La permutación debería tener aspecto aleatorio. Si pudieran apreciarse patrones sería posible descifrar el texto cifrado.
+
+Una permutación que cumpla estos 3 criterios se denomina una *permutación segura.* 
+
+
+El modo de operacion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 
